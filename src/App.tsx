@@ -1,5 +1,7 @@
 import React from 'react';
 
-const App: React.FC = () => <h1>GoBarber</h1>;
+import SignIn from './pages/SignIn';
+
+const App: React.FC = () => <SignIn />;
 
 export default App;
