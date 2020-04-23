@@ -7,6 +7,7 @@ export const Container = styled.div`
   padding: 16px;
   width: 100%;
   color: #666360;
+  display: flex;
 
   & + div {
     margin-top: 8px;
