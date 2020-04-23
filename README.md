@@ -8,7 +8,7 @@ This is the web frontend application. It was developed using ReactJS.
 
 ## Installation
 
-To run this applications, just clone it and start the server.
+To run this application, just clone it and start the server.
 
 ```bash
 $ git clone git@github.com:cleiver/GoStack11---GoBarber-Web.git GoBarberWeb
@@ -20,6 +20,6 @@ $ yarn
 $ yarn start
 ```
 
-### Dependencies
+### Backend dependency
 
 In order for this application to work, you also have to start the [backend server](https://github.com/cleiver/GoStack11---GoBarber-Backend).
