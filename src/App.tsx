@@ -1,7 +1,7 @@
 import React from 'react';
 
-import SignUp from './pages/SignUp';
+import SignIn from './pages/SignIn';
 
-const App: React.FC = () => <SignUp />;
+const App: React.FC = () => <SignIn />;
 
 export default App;
