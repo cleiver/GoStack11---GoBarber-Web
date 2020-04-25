@@ -1,12 +1,14 @@
 import React from 'react';
 
 import SignIn from './pages/SignIn';
-import { AuthProvider } from './hooks/AuthContext';
+import AppProviders from './hooks';
 
 const App: React.FC = () => (
-  <AuthProvider>
-    <SignIn />
-  </AuthProvider>
+  <>
+    <AppProviders>
+      <SignIn />
+    </AppProviders>
+  </>
 );
 
 export default App;
