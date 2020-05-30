@@ -13,10 +13,16 @@ import { Container, Error } from './styles';
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   // Overriding name and making it required
   name: string;
+  containerStyle?: object;
   icon?: React.ComponentType<IconBaseProps>;
 }
 
-const Input: React.FC<InputProps> = ({ name, icon: Icon, ...props }) => {
+const Input: React.FC<InputProps> = ({
+  name,
+  containerStyle,
+  icon: Icon,
+  ...props
+}) => {
   // unform stuff
   const inputRef = useRef<HTMLInputElement>(null);
   const { fieldName, defaultValue, error, registerField } = useField(name);
@@ -48,7 +54,12 @@ const Input: React.FC<InputProps> = ({ name, icon: Icon, ...props }) => {
   // onfocus, change the colors of the input and the icon
   // onblur, undo onfocus
   return (
-    <Container isFocused={isFocused} isFilled={isFilled} hasError={!!error}>
+    <Container
+      isFocused={isFocused}
+      isFilled={isFilled}
+      hasError={!!error}
+      style={containerStyle}
+    >
       {Icon && <Icon size={20} />}
       <input
         ref={inputRef}
