@@ -53,6 +53,7 @@
     // só fazem sentido em projetos não-typescript
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off",
+    "import/no-duplicates": "off",
     "@typescript-eslint/camelcase": "off"
   },
   "settings": {
