@@ -67,7 +67,7 @@ export const AnimatedContainer = styled.div`
     }
   }
 
-  > a {
+  + a {
     color: #f4ede8;
     display: block;
     margin-top: 24px;
